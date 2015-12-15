@@ -6,24 +6,14 @@ output: ioslides_presentation
 ---
 
 ## Título
-
 Probando markdown en presentación...
 
-## Slide with Bullets
+## Abstract
+El fin de este trabajo es el de encontrar predictores de una acción terrorista contra una población civil de una gran ciudad a traves de la información hayada en las redes sociales. De esta forma se permite una actuación de los cuerpos de seguridad del estado que sea reventiva y no reactiva una vez se haya llevado a cabo el ataque terrorista.
 
-- Bullet 1
-- Bullet 2
-- Bullet 3
+## Introducción
+Empezamos a rellenar con la literatura previa, sobre si funciona o no funciona (hay que ir citando)
 
-## Slide with R Code and Output
-
-```{r}
-summary(cars)
-```
-
-## Slide with Plot
-
-```{r, echo=FALSE}
-plot(cars)
-```
-
+## Referencias
+*Svenson, P., Svensson, P. and Tullberg, H. (2006). Social network analysis and information fusion for anti-terrorism. In _Proceedings of the conference on civil and military readiness_ (Vol. 2006).
+*Bermingham, A., Conway, M., McInerney, L., O'Hare, N., & Smeaton, A. F. (2009). Combining social network analysis and sentiment analysis to explore the potential for online radicalisation. In _Social Network Analysis and Mining, 2009. ASONAM'09._ (231-236).
