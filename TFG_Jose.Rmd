@@ -1,0 +1,29 @@
+---
+title: "TFG_Jose"
+author: "José Menjibar Entrena"
+date: "15 de diciembre de 2015"
+output: ioslides_presentation
+---
+
+## Título
+
+Probando markdown en presentación...
+
+## Slide with Bullets
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+## Slide with R Code and Output
+
+```{r}
+summary(cars)
+```
+
+## Slide with Plot
+
+```{r, echo=FALSE}
+plot(cars)
+```
+
