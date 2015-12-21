@@ -6,14 +6,24 @@ output: ioslides_presentation
 ---
 
 ## Título
-Probando markdown en presentación...
+Predicción del terrorismo usando como predictores las redes sociales
 
 ## Abstract
-El fin de este trabajo es el de encontrar predictores de una acción terrorista contra una población civil de una gran ciudad a traves de la información hayada en las redes sociales. De esta forma se permite una actuación de los cuerpos de seguridad del estado que sea reventiva y no reactiva una vez se haya llevado a cabo el ataque terrorista.
+El fin de este trabajo es el de encontrar predictores de una acción terrorista dirigida contra una población civil de una gran ciudad a traves de la información hayada en las redes sociales. 
+El objetivo principal es el de ofrecer información que permita una actuación más preventiva de los cuerpos de seguridad del estado  e ir evitando tener que usar respuestas reactivas una vez se haya llevado a cabo el ataque terrorista.
 
 ## Introducción
-Empezamos a rellenar con la literatura previa, sobre si funciona o no funciona (hay que ir citando)
+Las nuevas amenazas a las que se enfrentan actualmente las naciones distan mucho de las técnicas de invasión militar a gran escala, en el que el oponente estaba organizado de una forma jerárquica, han dado paso a las células terroristas y a organizaciones criminales. Ante este nuevo paradigma, se hace patente un cambio en la estrategia a seguir para defenderse de estas acciones, cobrando una gran importancia los servicios de información.
+
+Y es que no solo nosotros estamos usando las redes sociales, desde los ataques del 11 de septiembre en EE.UU., el yihadismo ha incrementado su presencia online (Sageman, 2008), viendo este como una herramienta de propaganda y escaparate de sus barbaridades, como uno de los atacantes de Londres se inspiró en los montajes de vídeo sobre la guerra de Iraq y leyendo sobre la Yihad en este tipo de páginas (Awan, 2007). También Sageman (2008) advierte que muchos terroristas utilizan internet como una herramienta de formación, como hizo Khan al-Khalili en el atentado de El Cairo en 2005 cuando descargo los planos de una bomba desde una página yihadista.
+
+## Método
+API Twiter
 
 ## Referencias
-* Svenson, P., Svensson, P. and Tullberg, H. (2006). Social network analysis and information fusion for anti-terrorism. In _Proceedings of the conference on civil and military readiness_ (Vol. 2006).
+* Awan, A.N.(2007). Radicalization on the Internet? The virtual propagation of jihadist media and its effects. _Journal of the Royal United Services Institute, 152_ (3).
 * Bermingham, A., Conway, M., McInerney, L., O'Hare, N., & Smeaton, A. F. (2009). Combining social network analysis and sentiment analysis to explore the potential for online radicalisation. In _Social Network Analysis and Mining, 2009. ASONAM'09._ (231-236).
+* Sageman, M. (2008). Leaderless Jihad. Philadelphia US: University of Pennsylvania Press.
+* Svenson, P., Svensson, P. and Tullberg, H. (2006). Social network analysis and information fusion for anti-terrorism. In _Proceedings of the conference on civil and military readiness_ (Vol. 2006).
+
+
