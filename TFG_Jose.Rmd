@@ -27,10 +27,6 @@ Dentro del contexto de la radicalización tendremos que centrarnos en el análisis
 
 En el presente trabajo, asignaremos una puntuación en valencia emocional, tanto positiva como negativa, a las palabras que suscitan el yihadismo en los mensajes de Twitter. Esto nos dara la capacidad de obtener una puntuación de los sentimientos de este colectivo...
 
-We propose a novel application of a state-of-the-art sentiment analysis technique to examine social relationships
-and networks in the context of radicalization. In this paper we use a dictionary-based polarity scoring method to
-assign positivity and negativity scores to YouTube profiles and comments. This enables us to characterise users and
-groups of users by their sentiment towards a set of concepts found in our test corpus that are deemed to be of particular interest to jihadist
 
 API Twiter
 ## Discusión
