@@ -26,9 +26,7 @@ fecha <- as.character(Sys.Date())
 # los almacenamos en una variable, que es una lista de objetos
 searchTwitteR(busqueda, since=fecha, n=5000) -> twits
 
-# iconv("état", "latin1", "UTF-8")"
 
 #Graba twits en fichero
 nombreFichero <- sprintf("Datos/%s.rds", fecha)
 saveRDS(twits, nombreFichero)
-}
