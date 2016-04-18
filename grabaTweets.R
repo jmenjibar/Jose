@@ -1,6 +1,7 @@
 
 #Para usar paquete Twitter
 library(twitteR)
+library(lubridate)
 
 #Para conseguir la autorización de Twitter setup_twitter_oauth( [Twitter tokens] )
 #Para sacar las keys del archivo que NO esta en R por seguridadli:
@@ -18,9 +19,12 @@ setup_twitter_oauth (api_key[["Key"]],api_key[["Secret"]],api_key[["Token"]],api
   
 #Para buscar cosas en Twitter  
 
-#Creamos una variable que almacena la busqueda. Esta variable es una lista
+#Creamos una variable que almacena los terminos de busqueda
 busqueda <- "Ã‰tat califat"
-
-searchTwitteR(busqueda) -> twits
+#fecha de hoy
+fecha <- as.character(Sys.Date())
+#Buscar tweets con fecha de hoy
+# los almacenamos en una variable, que es una lista de objetos
+searchTwitteR(busqueda, since=fecha, until=fecha) -> twits
 
 # iconv("état", "latin1", "UTF-8")
