@@ -24,19 +24,11 @@ busqueda <- "Otegui"
 fecha <- as.character(Sys.Date())
 #Buscar tweets con fecha de hoy
 # los almacenamos en una variable, que es una lista de objetos
-searchTwitteR(busqueda, since=fecha, n=1000) -> twits
+searchTwitteR(busqueda, since=fecha, n=5000) -> twits
 
-# iconv("état", "latin1", "UTF-8")
+# iconv("état", "latin1", "UTF-8")"
 
-#Función que graba un objeto tweet en archivo como data frame
-grabaFichero <- function(twit) {
-  num <- 0
-  fichero <- function() {
-    num <<- num + 1
-    fecha <- format(Sys.Date(), format="%B_%d_%Y")
-    nombre <- sprintf("Datos/%s_%i", fecha, num)
-    nombre
-  }
-  write.csv(fichero(), as.data.frame(twit))
-}
+#Graba twits en fichero
+nombreFichero <- sprintf("Datos/%s.rds", fecha)
+saveRDS(twits, nombreFichero)
 }
