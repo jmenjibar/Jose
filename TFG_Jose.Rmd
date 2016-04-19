@@ -6,7 +6,7 @@ output: ioslides_presentation
 ---
 
 ## Título
-Análisis de sentimientos en las redes sociales como mecanismo  reactivo en la lucha contra el terrorismo islámico.
+Predicción de actitudes hacia el yihadismo a través del análisis de sentimientos en las redes sociales.
 
 ## Abstract
 Una explosión
@@ -22,16 +22,23 @@ Los medios de comunicación desde el Siglo XX vienen ejerciendo una importante in
 
 Desgraciadamente, no solo nosotros estamos usando las redes sociales, desde los ataques del 11 de septiembre en EE.UU., el yihadismo ha incrementado su presencia online (Sageman, 2008), viendo este tipo de páginas web como una herramienta para la propaganda y escaparate de sus barbaridades. Un claro ejemplo de esto es como uno de los atacantes de Londres afirmó inspirarse en los montajes de vídeo sobre la guerra de Iraq y leyendo sobre la Yihad en este tipo de páginas (Awan, 2007). También Sageman (2008) advierte que muchos terroristas utilizan internet como una herramienta de formación, como hizo Khan al-Khalili en el atentado de El Cairo en 2005 cuando descargo los planos de una bomba desde una página yihadista.
 
-* Meter objetivos e hipótesis
+El objetivo del presente trabajo es utilizar el análisis de sentimientos en la red social Twitter con el fin de poder realizar una predicción de un atentado terrorista.
 
+* Meter objetivos
+* Hipótesis
+
+
+##Muestra
+
+Paises arabes, poco acceso a Internet en comparación a occidente. Mayor papel de las mujeres gracias al anonimato que ofrece Internet
 
 ## Método
 
-El análisis de sentimientos es la herramienta apropiada para este estudio porque me da los medios necesarios para poder hacer una identificación de la valencia emocional (si es positiva o negativa) de una emoción, una opinión o de la evaluación que haga una persona sobre una noticia, comunicado u otro tipo de información. Este tipo de análisis ha demostrado su valía al utilizarse en otros campos con exito donde los usuarios tenían que dar su opinión sobre blogs (Ounis et al., 2008) o cine (Pang et al., 2002). Con esta herramienta podemos realizar un análisis dentro de las redes sociales, concretamente, la red social Twitter donde los mensajes tienden a ser cortos (limitados a 140 carácteres) el lenguaje tiende a ser informal, conciso y breve.
+El análisis de sentimientos es la herramienta apropiada para este estudio porque me da los medios necesarios para poder hacer una identificación de la valencia emocional (si es positiva o negativa) de una emoción, una opinión o de la evaluación que haga una persona sobre una noticia, comunicado u otro tipo de información. Este tipo de análisis ha demostrado su valía al utilizarse en otros campos con exito donde los usuarios tenían que dar su opinión sobre blogs (Ounis et al., 2008) o cine (Pang et al., 2002). Con esta herramienta podemos realizar un análisis dentro de las redes sociales, concretamente, la red social Twitter donde los mensajes tienden a ser cortos (limitados a 140 carácteres), y el lenguaje tiende a ser informal, conciso y breve.
 
 Dentro del contexto de la radicalización, trate de centrarme en el análisis de los sentimientos que suscitan una serie de palabras (ver tabla 1) _(incluir tabla con palabras)_
 
-En el presente trabajo, se trata de asignar una puntuación a la valencia emocional, tanto positiva como negativa, a las palabras que suscitan el yihadismo en los mensajes encontrados en la red social Twitter. Esto dara la capacidad de obtener una puntuación de los sentimientos de este colectivo...
+En el presente trabajo, se trata de asignar una puntuación a la valencia emocional, tanto positiva como negativa, a las palabras que suscitan el yihadismo en los mensajes encontrados en la red social Twitter. Esto dara la capacidad de obtener una puntuación de los sentimientos de este colectivo reflejada en un número de mensajes con determianda valencia emocional.
 
 
 Siguiendo las directrices de Twitter se creo una aplicación para buscar los datos
@@ -44,7 +51,9 @@ Con los datos obtenidos
 ## Discusión
 
 Críticas:
+* Mayor uso de la deepweb
 * Valencia emocional, muy subjetiva
+* Perfiles falsos (posible nueva línea de investigación, buscar artículo de GORAN)
 
 ## Referencias bibliográficas
 * Awan, A.N.(2007). Radicalization on the Internet? The virtual propagation of jihadist media and its effects. _Journal of the Royal United Services Institute, 152_ (3).
