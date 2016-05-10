@@ -2,6 +2,7 @@
 #Para usar paquete Twitter
 library(twitteR)
 
+
 #Para conseguir la autorización de Twitter setup_twitter_oauth( [Twitter tokens] )
 #Para sacar las keys del archivo que NO esta en R por seguridadli:
 api_key <- read.csv("TweetTok")
@@ -19,7 +20,8 @@ setup_twitter_oauth (api_key[["Key"]],api_key[["Secret"]],api_key[["Token"]],api
 #Para buscar cosas en Twitter  
 
 #Fecha de hoy
-fecha <- as.character(Sys.Date())
+#fecha <- as.character(Sys.Date()) 
+fecha <- "2016-05-04"
 
 #Creamos una variable que almacena los terminos de busqueda
 busqueda1 <- "estado islamico"
@@ -38,18 +40,27 @@ searchTwitteR(busqueda4, since=fecha, n=5000, lang="es") -> twits4
 searchTwitteR(busqueda5, since=fecha, n=5000, lang="es") -> twits5
 
 
+#Quitar RT
+no_retweets1 = strip_retweets(twits1)
+no_retweets2 = strip_retweets(twits2)
+no_retweets3 = strip_retweets(twits3)
+no_retweets4 = strip_retweets(twits4)
+no_retweets5 = strip_retweets(twits5)
+
+
 #Graba twits en fichero
 nombreFichero1 <- sprintf("Datos/%s_%s.rds", fecha, "estado_islamico")
-saveRDS(twListToDF(twits1), nombreFichero1)
-nombreFichero2 <- sprintf("Datos/%s_%s.rds", fecha, "en_Iraq")
-saveRDS(twListToDF(twits2), nombreFichero2)
-nombreFichero3 <- sprintf("Datos/%s_%s.rds", fecha, "califato")
-saveRDS(twListToDF(twits3), nombreFichero3)
-nombreFichero4 <- sprintf("Datos/%s_%s.rds", fecha, "allah")
-saveRDS(twListToDF(twits4), nombreFichero4)
-nombreFichero5 <- sprintf("Datos/%s_%s.rds", fecha, "yihad")
-saveRDS(twListToDF(twits5), nombreFichero5)
+saveRDS(no_retweets1, nombreFichero1)
 
-#Para recuperar la base de datos: ttt <- readRDS(sprintf("Datos/%s.rds", fecha))
-#Para que devuelva un twit: ttt[[1]]
+nombreFichero2 <- sprintf("Datos/%s_%s.rds", fecha, "en_Iraq")
+saveRDS(no_retweets2, nombreFichero2)
+
+nombreFichero3 <- sprintf("Datos/%s_%s.rds", fecha, "califato")
+saveRDS(no_retweets3, nombreFichero3)
+
+nombreFichero4 <- sprintf("Datos/%s_%s.rds", fecha, "allah")
+saveRDS(no_retweets4, nombreFichero4)
+
+nombreFichero5 <- sprintf("Datos/%s_%s.rds", fecha, "yihad")
+saveRDS(no_retweets5, nombreFichero5)
 

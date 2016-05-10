@@ -9,30 +9,38 @@ output: ioslides_presentation
 Predicción de actitudes hacia el yihadismo a través del análisis de sentimientos en las redes sociales.
 
 ## Abstract
-Una explosión
+Un atentado suele ser el resultado de una acción terrorista, ante la cual se activa un dispositivo con el que buscar a los culpables. La información que los servicios de seguridad de cualquier estado recaban, permite dar una respuesta antes del atentado. Crear herramientas que permitan facilitar el trabajo de procesar grandes cantidades de información e identificar posibles amenazas es una de las demandas de estos servicios.
 
-El fin de este trabajo es el de encontrar predictores de una acción terrorista dirigida contra una población civil de una gran ciudad a traves de la información hayada en las redes sociales, usando palabras determinadas asociadas al yihadismo así como su valencia emocional. 
+El fin de este trabajo es el de crear una herramienta que permita identificar actitudes favorables hacia el yihadismo dentro de las redes sociales, usando palabras determinadas asociadas al yihadismo, así como su valencia emocional para cuantificar su actitud.  Para ello, y aprovechando las ventajas que ofrece el Big Data, analizaremos el uso de palabras clave (por ejemplo, Allah, Estado Islámico.) dentro de la red social, así como su valor emocional para establecer cuáles de estas palabras pueden ser unos predictores clave a la hora de identificar una actitud positiva hacia la Yihad o sus seguidores.
 
-El objetivo principal es el de ofrecer información que permita una actuación más preventiva de los cuerpos de seguridad del estado  e ir evitando tener que usar respuestas reactivas una vez se haya llevado a cabo el ataque terrorista.
+El objetivo principal es el de ofrecer herramientas que obtengan información que sea clave para construir una actuación más preventiva de los cuerpos de seguridad del estado e ir evitando tener que usar respuestas reactivas una vez se haya llevado a cabo el ataque terrorista.
 
-## Introducción
+
+## 1. Introducción
 Las nuevas amenazas a las que se enfrentan actualmente las naciones distan mucho de las técnicas de invasión militar a gran escala, en el que el oponente estaba organizado de una forma jerárquica, han dado paso a las células terroristas y a organizaciones criminales. Ante este nuevo paradigma, se hace patente un cambio en la estrategia a seguir para defenderse de estas acciones, cobrando una gran importancia los servicios de información.
 
-Los medios de comunicación desde el Siglo XX vienen ejerciendo una importante influencia en la percepción de la opinión publica sobre conflictos o incidentes, acompañada siempre de una descripcción del _modus operandi_, así como la petición de los cuerpos y fuerzas de seguridad del estado de ayuda en la identificación de los posibles intervinientes en el atentado (Hogan, 2005). Pero desde el alza de las redes sociales a principios del S.XXI, estas vienen siendo usadas como medio de comunicación por el que difundir noticias y todo tipo de mensajes.
+Los medios de comunicación desde el Siglo XX vienen ejerciendo una importante influencia en la percepción de la opinión pública sobre conflictos o incidentes, acompañada siempre de una descripción del _modus operandi_, así como la petición de los cuerpos y fuerzas de seguridad del estado de ayuda en la identificación de los posibles intervinientes en el atentado (Hogan, 2005). Pero desde el alza de las redes sociales a principios del S.XXI, estas vienen siendo usadas como medio de comunicación por el que difundir noticias y todo tipo de mensajes.
 
 Desgraciadamente, no solo nosotros estamos usando las redes sociales, desde los ataques del 11 de septiembre en EE.UU., el yihadismo ha incrementado su presencia online (Sageman, 2008), viendo este tipo de páginas web como una herramienta para la propaganda y escaparate de sus barbaridades. Un claro ejemplo de esto es como uno de los atacantes de Londres afirmó inspirarse en los montajes de vídeo sobre la guerra de Iraq y leyendo sobre la Yihad en este tipo de páginas (Awan, 2007). También Sageman (2008) advierte que muchos terroristas utilizan internet como una herramienta de formación, como hizo Khan al-Khalili en el atentado de El Cairo en 2005 cuando descargo los planos de una bomba desde una página yihadista.
 
-El objetivo del presente trabajo es utilizar el análisis de sentimientos en la red social Twitter con el fin de poder realizar una predicción de un atentado terrorista.
-
-* Meter objetivos
-* Hipótesis
 
 
-##Muestra
+El principal objetivo e inicial de este Trabajo de Fin de Grado es la creación de una herramienta que permita predecir cuándo es más posible que se produzca un atentado por parte de yihadistas. Sin embargo, debido a lo ambicioso de este objetivo y a la gran cantidad de información por procesar, fue necesario sintetizar el trabajo. Por esto, el objetivo del presente trabajo es utilizar el análisis de sentimientos en la red social Twitter con el fin de poder obtener una serie de palabras que permita realizar una predicción de una actitud positiva hacia el yihadismo en España. 
 
+Por lo tanto, se espera que las palabras seleccionadas seran representadas en un gran número de mensajes, que a su vez estos estaran relacionados con una actitud positiva hacia el yihadismo.
+
+
+
+
+
+
+##2. Métodos
+##2.1 Muestra
+
+La muestra de mensajes utilizada fue creada entre el xxxx y xxxx, conformando un total de xxxx mensajes.
 Paises arabes, poco acceso a Internet en comparación a occidente. Mayor papel de las mujeres gracias al anonimato que ofrece Internet
 
-## Método
+##2.2 Procedimiento
 
 El análisis de sentimientos es la herramienta apropiada para este estudio porque me da los medios necesarios para poder hacer una identificación de la valencia emocional (si es positiva o negativa) de una emoción, una opinión o de la evaluación que haga una persona sobre una noticia, comunicado u otro tipo de información. Este tipo de análisis ha demostrado su valía al utilizarse en otros campos con exito donde los usuarios tenían que dar su opinión sobre blogs (Ounis et al., 2008) o cine (Pang et al., 2002). Con esta herramienta podemos realizar un análisis dentro de las redes sociales, concretamente, la red social Twitter donde los mensajes tienden a ser cortos (limitados a 140 carácteres), y el lenguaje tiende a ser informal, conciso y breve.
 
@@ -44,20 +52,29 @@ En el presente trabajo, se trata de asignar una puntuación a la valencia emocion
 Siguiendo las directrices de Twitter se creo una aplicación para buscar los datos
 
 API Twiter
-## Resultados
+*Hablar de filtro de RT
+
+##3. Resultados
 Con los datos obtenidos
 
 
-## Discusión
+##4. Discusión
+
 
 Críticas:
 * Mayor uso de la deepweb
+Hay que tener en cuenta que nos hemos centrado en una parte muy visible de Internet, la _World Wide Web_, que como destaca Sageman (2008) es la parte donde se han centrado la mayoría de los análisis olvidando por completo la otra parte, la _Deep Web_.
+
 * Valencia emocional, muy subjetiva
+
 * Perfiles falsos (posible nueva línea de investigación, buscar artículo de GORAN)
+No hay que olvidar que hay que tener cuidado entre los diferentes mensajes, pues se han dado casos como el de un militar que se dedicaba a crear propaganda yihadista sin tener ninguna relación con esta o profesar la fé musulmana (Europa Press, 2009).
+
 
 ## Referencias bibliográficas
 * Awan, A.N.(2007). Radicalization on the Internet? The virtual propagation of jihadist media and its effects. _Journal of the Royal United Services Institute, 152_ (3).
 * Bermingham, A., Conway, M., McInerney, L., O'Hare, N., & Smeaton, A. F. (2009). Combining social network analysis and sentiment analysis to explore the potential for online radicalisation. In _Social Network Analysis and Mining, 2009. ASONAM'09._ (231-236).
+*Europa Press. (2009). El militar detenido en Granada por propaganda yihadista es un soldado de la Base de Armilla del Ejército del Aire. Retrieved from http://www.europapress.es/nacional/noticia-militar-detenido-granada-propaganda-yihadista-soldado-base-armilla-ejercito-aire-20090217140053.html
 * Horgan, J. (2009). Psicología del terrorismo. Barcelona: Gedisa.
 * Ounis,I., MacDonald, C. y Soboroff, I. (2008).  _Overview of the TREC-2008 Blog Track_. Presentation, NIST
 * Pang, B., Lee, L. y Vaithyanathan, S. (2002). Thumbs up? Sentiment classification using machine learning techniques. _Proceedings of the 2002 Conference on Empirical Methods in Natural Language Processing (EMNLP), 10_, 79-86.
