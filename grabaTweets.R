@@ -21,7 +21,7 @@ setup_twitter_oauth (api_key[["Key"]],api_key[["Secret"]],api_key[["Token"]],api
 
 #Fecha de hoy
 #fecha <- as.character(Sys.Date()) 
-fecha <- "2016-05-04"
+fecha <- "2016-05-11"
 
 #Creamos una variable que almacena los terminos de busqueda
 busqueda1 <- "estado islamico"

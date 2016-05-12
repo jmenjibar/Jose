@@ -62,6 +62,8 @@ Con los datos obtenidos
 
 
 Críticas:
+
+*Poco uso por parte de una población
 * Mayor uso de la deepweb
 Hay que tener en cuenta que nos hemos centrado en una parte muy visible de Internet, la _World Wide Web_, que como destaca Sageman (2008) es la parte donde se han centrado la mayoría de los análisis olvidando por completo la otra parte, la _Deep Web_.
 
