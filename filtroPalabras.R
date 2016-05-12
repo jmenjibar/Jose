@@ -1,5 +1,14 @@
+library(stringr)
+library(plyr)
+library(dplyr)
+library(magrittr)
 library(tm)
+library(proxy)
+library(ggplot2)
+library(RColorBrewer)
+library(wordcloud)
 
+#Leer ficheros de datos y crear un corpus:
 twCor <-VCorpus(DirSource("txt", encoding="UTF-8"), readerControl = list(language="es"))
 
 #Quitar acentos:
@@ -15,12 +24,33 @@ twCor <- tm_map(twCor, removeNumbers)
 myStopwords <- c(stopwords("spanish"))
 twCor <- tm_map(twCor, removeWords, myStopwords)
 
-#Leer ficheros de datos y crear un corpus:
-twCor <-VCorpus(DirSource("txt", encoding="UTF-8"), readerControl = list(language="es"))
+
 
 #Para crear la matriz
 twCor <-tm_map(twCor, PlainTextDocument)
 matrizTweets <- TermDocumentMatrix(twCor, control = list(minWordLength = 1))
+matrizTweets <- removeSparseTerms(matrizTweets, 0.99) #Este valor va de 0 a 1, siendo 0,99 las más frecuentes
+
+
+#Función para partir matrices (por defecto divide entre uno)
+muestreaTweets <- function(matriz, fraccion=1) {
+  muestra <- sample(1:ncol(matriz), ncol(matriz)/fraccion)
+  matriz[, muestra]
+}
+
+# Reduce la matriz a la mitad de tweets, aleatoriamente pero de forma reproducible
+set.seed(1463068473)
+matrizTweets <- muestreaTweets(matrizTweets, 2) #Este número marca el número por el que dividimos la matriz
+
+
+#Para construir las matrices para el clustering:
+tf_idf_mat <- as.matrix(tf_idf)
+tf_idf_dist <- dist(tf_idf_mat, method = 'cosine')
+
+#Con esto creamos el cluster dendrogram por el metodo de la distancia del coseno de Ward
+clust_h <- hclust(d = tf_idf_dist, method = 'ward.D2')
+plot(clust_h, main = 'Cluster Dendrogram: Ward Cosine Distance', xlab = '', ylab = '', sub = '')
+
 
 #Para el wordcloud
 m <- as.matrix(matrizTweets)
