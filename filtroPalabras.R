@@ -44,11 +44,11 @@ matrizTweets <- muestreaTweets(matrizTweets, 2) #Este número marca el número p
 
 
 #Para construir las matrices para el clustering:
-tf_idf_mat <- as.matrix(tf_idf)
-tf_idf_dist <- dist(tf_idf_mat, method = 'cosine')
+matrizTweets <- as.matrix(matrizTweets)
+matrizTweets_dist <- dist(matrizTweets, method = 'cosine')
 
 #Con esto creamos el cluster dendrogram por el metodo de la distancia del coseno de Ward
-clust_h <- hclust(d = tf_idf_dist, method = 'ward.D2')
+clust_h <- hclust(d = matrizTweets_dist, method = 'ward.D2')
 plot(clust_h, main = 'Cluster Dendrogram: Ward Cosine Distance', xlab = '', ylab = '', sub = '')
 
 
