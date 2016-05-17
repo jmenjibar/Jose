@@ -7,6 +7,7 @@ library(proxy)
 library(ggplot2)
 library(RColorBrewer)
 library(wordcloud)
+library(extracat)
 
 #Leer ficheros de datos y crear un corpus:
 twCor <-VCorpus(DirSource("txt", encoding="UTF-8"), readerControl = list(language="es"))
@@ -50,6 +51,14 @@ matrizTweets_dist <- dist(m, method = 'cosine')
 #Con esto creamos el cluster dendrogram por el metodo de la distancia del coseno de Ward
 clust_h <- hclust(d = matrizTweets_dist, method = 'ward.D2')
 plot(clust_h, main = 'Cluster Dendrogram: Ward Cosine Distance', xlab = '', ylab = '', sub = '')
+
+#Para crear un heatmap
+heatmap(m[cutree(clust_h, 6)==1,])
+heatmap(m[cutree(clust_h, 6)==2,])
+heatmap(m[cutree(clust_h, 6)==3,])
+heatmap(m[cutree(clust_h, 6)==4,])
+heatmap(m[cutree(clust_h, 6)==5,])
+heatmap(m[cutree(clust_h, 6)==6,])
 
 
 #Para el wordcloud
