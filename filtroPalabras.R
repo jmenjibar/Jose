@@ -44,8 +44,8 @@ matrizTweets <- muestreaTweets(matrizTweets, 2) #Este número marca el número p
 
 
 #Para construir las matrices para el clustering:
-matrizTweets <- as.matrix(matrizTweets)
-matrizTweets_dist <- dist(matrizTweets, method = 'cosine')
+m <- as.matrix(matrizTweets)
+matrizTweets_dist <- dist(m, method = 'cosine')
 
 #Con esto creamos el cluster dendrogram por el metodo de la distancia del coseno de Ward
 clust_h <- hclust(d = matrizTweets_dist, method = 'ward.D2')
@@ -53,7 +53,6 @@ plot(clust_h, main = 'Cluster Dendrogram: Ward Cosine Distance', xlab = '', ylab
 
 
 #Para el wordcloud
-m <- as.matrix(matrizTweets)
 v <- sort(rowSums(m), decreasing=TRUE)
 myNames <- names(v)
 k <- which(names(v)=="miners")
